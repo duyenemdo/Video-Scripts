@@ -1,75 +1,75 @@
 Video: https://youtu.be/Ud4LVhFwL9g
 
-## CMS Video Script
-So every so often I have someone come along and message me : "Hey I'm a Talented Developer, I want to work for Decred, Can I speak to your CEO?"
+## Kịch bản CMS Video
+Thỉnh thoảng hay có người xuất hiện và nhắn tin cho tôi là: "Hey, tôi là một nhà phát triển tài năng, tôi muốn làm việc cho Decred, tôi có thể nói chuyện với CEO của bạn không?"
 
-Well, in Decred, there is no CEO or hiring Manager. The reason why is because Decred is an autonomous, decentralized, open source project with no existing central authority to make those types of decisions.
+Vâng, ở Decred, không có CEO hoặc Giám đốc tuyển dụng. Lý do tại sao thì là vì Decred là một dự án mã nguồn mở, phi tập trung, tự quản lý, không có cơ quan điều hành hiện có để đưa ra các loại quyết định đó.
 
-So how does it all work? If there's no CEO, how do new people get brought on?
-Let's dive further into the Decred Contractor Model: (Transition)
+Vậy nó hoạt động như thế nào? Nếu không có CEO, làm thế nào để tuyển thêm những người mới?
+Chúng ta hãy đi sâu hơn vào Mô hình Nhà thầu Decred: (Chuyển đổi)
 
-Decred is a community of doers, and that is fundamental to the growth of the project. In order to become a contractor, it is typical for a new contributor to first:
-- Demonstrate an independent interest in Decred.
+Decred là một cộng đồng những người đóng góp và đó là nền tảng cho sự phát triển của dự án. Để trở thành một nhà thầu, về cơ bản là một người đóng góp mới trước tiên phải làm:
+- Thể hiện sự quan tâm độc lập đến Decred.
 
-- understand the basics of Decred by reading documentation or other educational content
+- hiểu những điều cơ bản về Decred bằng cách đọc tài liệu hoặc các nội dung khác
 
-This means understanding the core tenets, and other ins and outs of the project. The most efficient way to learn about Decred is to visit docs.decred.org and visit the 'Getting Started' section. (show this on screen)
+Điều này có nghĩa là hiểu các nguyên lý cốt lõi và các nội dung chi tiết khác của dự án. Cách hiệu quả nhất để tìm hiểu về Decred là truy cập docs.decred.org và truy cập phần 'Bắt đầu'. (hiển thị điều này trên màn hình)
 
-- find a part of the project you feel you have the skills to contribute to.
-What kind of skillset do you possess? Where do you think you can contribute? Do you believe your work will be valuable to the project?
+- tìm phần của dự án mà bạn cảm thấy mình có đủ kỹ năng để đóng góp.
+Bạn sở hữu loại kỹ năng nào? Bạn nghĩ mình có thể đóng góp ở bộ phận nào? Bạn có tin rằng công việc của bạn sẽ có giá trị cho dự án không?
 
-- Check with Decred contractors before starting work, to avoid duplication of efforts.
-The easiest way to reach Decred Contractors is by joining chat.decred.org which uses Matrix. There are specific rooms available for development, research, and marketing.
+- Kiểm tra lại với nhà thầu Decred trước khi bắt đầu công việc, để tránh việc trùng lặp công việc.
+Cách dễ nhất để tiếp cận Decred Contractors là tham gia chat.decred.org sử dụng Matrix. Có các phòng cụ thể có sẵn để phát triển, nghiên cứu và tiếp thị.
 
-- Complete and submit your work. If it is deemed valuable by the community and current contractors, odds are you'll be brought on as a contractor.
-Now This model works well because it means the people working on Decred actually care about the project on a deeper level, and don't just see their work as a means to another monthly paycheck. They understand their work is helping to grow and expand the Decred ecosystem, which is something many contractors are personally invested in.
+- Hoàn thành và gửi tác phẩm của bạn. Nếu nó được cộng đồng và các nhà thầu hiện tại cho là có giá trị, rất có thể bạn sẽ được đưa vào làm nhà thầu.
+Giờ đây, mô hình này hoạt động tốt vì nó có nghĩa là những người làm việc trên Decred thực sự quan tâm đến dự án ở mức độ sâu hơn và không chỉ xem công việc của họ như một phương tiện để trả lương hàng tháng. Họ hiểu rằng công việc của họ đang giúp phát triển và mở rộng hệ sinh thái Decred, đây là điều mà nhiều nhà thầu đang tự mình đầu tư.
 
-So where does this money come from to pay Contractors?
-Not from an ICO or Outside Capital, Contractors are paid directly by Decred's Treasury, which gets its funds from Decred's own Block Reward. 10% of each block subsidy goes towards this fund, and as of this video there are 600,000~ (will update) DCR in the treasury which is currently worth 12.5 million~ US dolllars. (will update)
+Vậy số tiền này lấy từ đâu để trả cho các Nhà thầu?
+Không phải từ ICO hoặc Nguồn vốn bên ngoài, Nhà thầu được thanh toán trực tiếp bởi Kho bạc của Decred, vốn nhận được tiền từ Phần thưởng khối của chính Decred. 10% trợ cấp của mỗi khối được chuyển vào quỹ này và tính đến video này, có 600.000 ~ (sẽ cập nhật) DCR trong kho bạc hiện trị giá 12,5 triệu ~ đô la Mỹ. (sẽ nâng cấp)
 
-Having this treasury means Decred will be funded indefinitely, allowing for continuous infrastructure maintenance, development work, design, research, administration, and marketing. In fact, the creation of this video was funded by the Treasury.
+Có ngân quỹ này có nghĩa là Decred sẽ được tài trợ vô thời hạn, cho phép duy trì cơ sở hạ tầng liên tục, công việc phát triển, thiết kế, nghiên cứu, quản trị và tiếp thị. Trên thực tế, việc tạo ra video này được tài trợ bởi Kho bạc.
 
-So the Treasury sounds great and all, but who gets to control it? Who gets to make these decisions?
+Vì vậy, Kho bạc nghe có vẻ rất tuyệt vời, nhưng ai có thể kiểm soát nó? Ai sẽ đưa ra những quyết định này?
 
-The Treasury is controlled by Decred Stakeholders, the people who hold and choose to stake their coins in Decred's hybrid PoW/PoS mining system. They do this by voting to authorize expenditures via Politeia, Decred's off-chain public proposal platform.
+Kho bạc được kiểm soát bởi các Bên liên quan của Decred, những người nắm giữ và chọn đóng góp tiền của họ vào hệ thống khai thác PoW / PoS kết hợp của Decred. Họ thực hiện điều này bằng cách bỏ phiếu cho phép chi tiêu thông qua Politeia, nền tảng đề xuất công khai ngoài chuỗi của Decred.
 
-The end goal of this fund is to be a Stakeholder Driven decentralized autonomous organization - or DAO for short.
-So as a Decred contractor you are actually working for the Decred DAO. This comes with a slew of benefits.
+Mục tiêu cuối cùng của quỹ này là trở thành một tổ chức tự trị phi tập trung được điều khiển bởi các bên liên quan - gọi tắt là DAO.
+Vì vậy, với tư cách là một nhà thầu Decred, bạn thực sự đang làm việc cho Decred DAO. Điều này đi kèm với một loạt các lợi ích.
 
-- You can work from anywhere in the world.
-- There are no formal meetings.
-- There is no corporate or political agenda pushed on you
-- you can work behind a pseudonym
-- and you can work Full or Part time, setting your own hours.
+- Bạn có thể làm việc từ mọi nơi trên thế giới.
+- Không có cuộc họp chính thức.
+- Không có chương trình nghị sự của công ty hoặc chính trị thúc đẩy bạn
+- bạn có thể làm việc đằng sau một bút danh
+- và bạn có thể làm việc Toàn thời gian hoặc Bán thời gian, hay làm những lúc mà bạn muốn.
 
-And while working remotely is becoming more commonplace these days what with the rise of the internet, the Decred project has shaped this in truly a unique manner, true to the principle of decentralization, since contractors are able to self-manage their work.
-So you may be wondering how contractors report their hours and get paid? Well, there's a system for that. (transition)
+Và trong khi làm việc từ xa đang trở nên phổ biến hơn nhờ sự phát triển của Internet, dự án Decred đã định hình điều này theo một cách thức thực sự độc đáo, đúng với nguyên tắc phân quyền, vì các nhà thầu có thể tự quản lý công việc của họ.
+Vì vậy, bạn có thể tự hỏi làm thế nào các nhà thầu báo cáo giờ làm việc của họ và nhận lương? Vâng, có một hệ thống cho điều đó. (chuyển tiếp)
 
-## Contractor Management System
+## Hệ thống quản lý nhà thầu
 
-At the end of each month, each contractor prepares an invoice and submits it to the Contractor Management System, or CMS for short, which is integrated into Politeia. The invoice lists the items the contractor has worked on and a charge (in USD) for each - typically these charges are for a number of hours worked at an agreed hourly rate. (Transition)
+Vào cuối mỗi tháng, mỗi nhà thầu chuẩn bị một hóa đơn và nộp cho Hệ thống Quản lý Nhà thầu, gọi tắt là CMS, được tích hợp vào Politeia. Hóa đơn liệt kê các hạng mục mà nhà thầu đã thực hiện và một khoản phí (tính bằng USD) cho mỗi hạng mục - thông thường các khoản phí này dành cho một số giờ làm việc nhất định với mức giá theo giờ đã thỏa thuận. (Chuyển tiếp)
  
-USD amounts are converted to DCR at the average daily market rate for the previous month.
-Once all of the invoices have been received and processed, payments to all contractors are made on the same day. This typically happens in the middle of the month, around 2 weeks in. The intention is to turn payments around as quickly as possible but the process takes time and relies on timely invoicing by contractors.
+Số tiền USD được chuyển đổi sang DCR theo tỷ giá thị trường trung bình hàng ngày của tháng trước đó.
+Khi tất cả các hóa đơn đã được nhận và xử lý, các khoản thanh toán cho tất cả các nhà thầu được thực hiện trong cùng một ngày. Điều này thường được sắp xếp vào giữa tháng, sau khoảng 2 tuần. Mục đích là để xoay vòng các khoản thanh toán càng nhanh càng tốt nhưng quá trình này cần thời gian và phụ thuộc vào việc nhà thầu lập hóa đơn kịp thời.
 
-There's also a Decred Contractor Clearance (DCC) component integrated into CMS whereby potential Contractors can be vetted and approved by other Contractors within a specific domain, granting them a DCC which enables them to bill on CMS.
-Contractors can also have their DCC revoked via this same process if their work is deemed not sufficient by other contractors in their domain.
-Even though each contractor is responsible for self-management, their work is reviewed by their peers operating in the same domain to see if they are billing correctly.
+Ngoài ra còn có cơ quan Cấp phép nhà thầu Decred (DCC) được tích hợp vào CMS, theo đó các Nhà thầu tiềm năng có thể được các Nhà thầu khác kiểm tra và phê duyệt trong một miền cụ thể, cấp cho họ một DCC cho phép họ lập hóa đơn trên CMS.
+Các nhà thầu cũng có thể bị thu hồi DCC thông qua quy trình tương tự nếu công việc của họ bị các nhà thầu khác trong miền của họ cho là không đủ điều kiện.
+Mặc dù mỗi nhà thầu chịu trách nhiệm tự quản lý, nhưng công việc của họ sẽ được các đồng nghiệp làm trong cùng một lĩnh vực xem xét để xem họ có thanh toán chính xác hay không.
 
-As the DCR/USD conversion rate is pegged to the previous month, contractors are exposed to any volatility in the price of DCR that occurs during this period. As contractors will be unable to liquidate their earnings until payments have been processed, they must be mindful that prices can decrease or increase in the interim, and plan their finances accordingly.
-Since contractors are paid out in DCR and not USD, many have to sell their DCR to Fiat in order to pay bills, and in doing so are exposed to exchange fees and price volatility.
+Vì tỷ lệ chuyển đổi DCR / USD được cố định với tháng trước, các nhà thầu phải chịu mọi biến động về giá của DCR xảy ra trong giai đoạn này. Vì các nhà thầu sẽ không thể thanh lý thu nhập của họ cho đến khi các khoản thanh toán đã được xử lý, họ phải lưu ý rằng giá có thể giảm hoặc tăng trong thời gian tạm thời và lập kế hoạch tài chính cho phù hợp.
+Vì các nhà thầu được thanh toán bằng DCR chứ không phải USD, nhiều người phải bán DCR của họ cho Fiat để thanh toán hóa đơn và làm như vậy phải chịu phí hối đoái và biến động giá cả.
 
-If you'd like to get an insight on what it's like to be a DCR contractor, community member Richard Red wrote up an in depth article talking about his experiences working for the Decred DAO. (https://medium.com/@richardred/working-for-the-decred-dae-a9cfb17686fa) (pan over article)
+Nếu bạn muốn có cái nhìn sâu sắc về việc trở thành nhà thầu DCR, thành viên cộng đồng Richard Red đã viết một bài báo chuyên sâu nói về kinh nghiệm của anh ấy khi làm việc cho Decred DAO. (https://medium.com/@richardred/working-for-the-decred-dae-a9cfb17686fa) (chuyển qua bài báo)
 
-In the article he writes:
+Trong bài báo anh viết:
 
-**"Once one gets to know the project, one can identify useful pieces of work that aren't currently being done fairly easily. Taking on these tasks and completing them well is like the application process to (be paid for) work on Decred. As people get to know you and see that you're making useful contributions, other opportunities may open up."**
+**"Một khi đã biết về dự án, người ta có thể xác định những công việc hiện đang cần thiết nhưng lại không được thực hiện một cách dễ dàng. Đảm nhận những nhiệm vụ này và hoàn thành tốt chúng giống như quy trình đăng ký (được trả tiền) làm việc trên Decred. Khi mọi người biết đến bạn và thấy rằng bạn đang có những đóng góp hữu ích, các cơ hội khác có thể mở ra."**
 
-Understand that everything going on within the project is available to see on GitHub, so If you're interested in working for the project, simply visit Github, pick something to work on, do it, and if it's deemed valuable, odds are you'll be asked to become a contractor and get paid for your work.
+Hãy hiểu rằng mọi thứ đang diễn ra trong dự án đều có sẵn để xem trên GitHub, vì vậy, nếu bạn quan tâm đến việc làm việc cho dự án, chỉ cần truy cập Github, chọn thứ gì đó để làm việc, thực hiện nó và nếu nó được coi là có giá trị, thì khả năng cao là bạn sẽ được mời để trở thành một nhà thầu và được trả tiền cho công việc mà bạn đã làm.
 
-Listen to Decred Contractor Matheus talk about how he came into Decred: (show video segment)
+Hãy nghe nhà thầu Decred Matheus nói về cách anh ấy gia nhập Decred: (hiển thị đoạn video)
 
-Decred has contractors from all over the world contributing to various elements of the project. It is truly a global workforce coming together to sustain and improve the Decred protocol, all while doing so in an autonomous manner.
+Decred có các nhà thầu từ khắp nơi trên thế giới đóng góp vào các phần khác nhau của dự án. Đó thực sự là một lực lượng lao động toàn cầu hợp tác với nhau để duy trì và cải thiện giao thức Decred, đồng thời làm như vậy theo cách tự chủ.
 
-Remember, What you do for Decred is more important than whatever credentials you might possess, and it is the key to becoming a Contractor. Resumes and interviews are simply not a thing here, you'll need to demonstrate on your own how you can add value to the Decred ecosystem in order to become a part of it.
-Thanks for watching, nd if you have any questions, please feel free to leave a comment, or check the video description for link's to join Decred's Community.
+Hãy nhớ rằng, những gì bạn làm cho Decred quan trọng hơn bất kỳ thông tin giới thiệu nào mà bạn có thể đọc được, và đó là chìa khóa để trở thành Nhà thầu. Sơ yếu lý lịch và phỏng vấn đơn giản không phải là mấu chốt ở đây, bạn sẽ cần phải tự mình chứng minh cách bạn có thể tăng giá trị cho hệ sinh thái Decred để trở thành một phần của nó.
+Cảm ơn bạn đã xem, và nếu bạn có bất kỳ câu hỏi nào, vui lòng để lại nhận xét hoặc xem mô tả video để biết link tham gia vào Cộng đồng Decred.
