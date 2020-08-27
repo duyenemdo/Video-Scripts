@@ -42,7 +42,7 @@ ChappJC nói rằng tôi không biết cái gì thì được coi là DeFi, như
 
 DEX sẽ là một trong nhiều ví dụ về các hệ thống được trang bị không được đánh dấu thông qua Decred DAO và tập thể các bên liên quan.
 
-Để lại nhận xét trong phần mô tả video nếu bạn nghĩ Decred nên nắm lấy Defi Hashtag hoặc tránh xa nó để tránh bị dồn vào những dự án không thuận lợi.
+Để lại nhận xét trong phần mô tả video nếu bạn nghĩ Decred nên  Defi Hashtag hoặc tránh xa nó để tránh bị dồn vào những dự án không thuận lợi.
 
 https://github.com/decred
 
