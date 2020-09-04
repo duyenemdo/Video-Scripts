@@ -31,7 +31,7 @@ Có ngân quỹ này có nghĩa là Decred sẽ được tài trợ vô thời h
 
 Vì vậy, Kho bạc nghe có vẻ rất tuyệt vời, nhưng ai có thể kiểm soát nó? Ai sẽ đưa ra những quyết định này?
 
-Kho bạc được kiểm soát bởi các Bên liên quan của Decred, những người nắm giữ và chọn đóng góp tiền của họ vào hệ thống khai thác PoW / PoS kết hợp của Decred. Họ thực hiện điều này bằng cách bỏ phiếu cho phép chi tiêu thông qua Politeia, nền tảng đề xuất công khai ngoài chuỗi của Decred.
+Kho bạc được kiểm soát bởi những người nắm giữ Decred, những người nắm giữ và chọn đóng góp tiền của họ vào hệ thống khai thác PoW / PoS kết hợp của Decred. Họ thực hiện điều này bằng cách bỏ phiếu cho phép chi tiêu thông qua Politeia, nền tảng đề xuất công khai ngoài chuỗi của Decred.
 
 Mục tiêu cuối cùng của quỹ này là trở thành một tổ chức tự trị phi tập trung được điều khiển bởi các bên liên quan - gọi tắt là DAO.
 Vì vậy, với tư cách là một nhà thầu Decred, bạn thực sự đang làm việc cho Decred DAO. Điều này đi kèm với một loạt các lợi ích.
