@@ -1,48 +1,48 @@
-See video on YouTube: https://youtu.be/B-5O_GBcbV0
+Xem video trên YouTube: https://youtu.be/B-5O_GBcbV0
 
-*NOTE: This tutorial is geared towards low-end users who are just looking to run a node to help support the Decred network. For that reason, it does not dive into staking, setting up a wallet, or anything else beyond getting the node running with TOR. This guide will be updated as needed per new releases and tweaks*
+*CHÚ Ý: Hướng dẫn này hướng tới người dùng cấp thấp, những người chỉ muốn chạy một nút để giúp hỗ trợ mạng Decred. Vì lý do đó, nó không đi sâu vào việc staking, thiết lập ví hoặc bất kỳ điều gì khác ngoài việc làm cho nút chạy với TOR. Hướng dẫn này sẽ được cập nhật khi cần theo các bản phát hành và điều chỉnh mới*
 
-## Raspberry Pi Full Node With Tor Guide
+## Raspberry Pi Full Node với Tor Guide
 
 
-#### Introduction
+#### Giới thiệu
 
-In this tutorial, I’ll walk you through how to setup and run a Decred Full Node on the Raspberry Pi with Tor enabled. 
+Trong hướng dẫn này, tôi sẽ hướng dẫn bạn cách thiết lập và chạy Decred Full Node trên Raspberry Pi với Tor.
 
-A full node is a program that fully validates transactions and blocks, without having to rely on a third party.
+Nút đầy đủ là một chương trình xác thực đầy đủ các giao dịch và khối mà không cần phải dựa vào bên thứ ba.
 
-Running a full node is one of the strongest actions of support you can do for a peer-to-peer distributed protocol. Every single Decred node that runs on the network adds strength and resilience to the consensus mechanism.
+Chạy một nút đầy đủ là một trong những hành động hỗ trợ mạnh mẽ nhất mà bạn có thể làm đối với giao thức phân hạng ngang hàng (peer-to-peer). Mỗi nút Decred chạy trên mạng đều bổ sung sự chắc chắn và khả năng phục hồi cho cơ chế đồng thuận.
 
-This video is geared towards low-level users new to the Raspberry Pi and Linux. The easiest way to follow along is to run this video alongside the script I've released on github where you can copy and paste in all of the needed commands. You'll see me doing this in the video.
+Video này hướng đến người dùng cấp thấp mới sử dụng Raspberry Pi và Linux. Cách dễ nhất để làm theo là chạy video này cùng với tập lệnh tôi đã phát hành trên github, nơi bạn có thể sao chép và dán tất cả các lệnh cần thiết. Bạn sẽ thấy tôi thực hành trong video luôn.
 
-I'd like to thank Checkmate for the original [Raspberry Pi Guide](https://medium.com/decred/running-a-decred-raspberry-pi-node-ac605b70c652), and Kozel for the [guide on setting up TOR](https://github.com/artikozel/decred-articles/blob/master/English/howilearnedtostopworryingandlovethecli/part2-configuringtor.md).
+Tôi muốn cảm ơn Checkmate vì bản gốc [Raspberry Pi Guide](https://medium.com/decred/running-a-decred-raspberry-pi-node-ac605b70c652), và Kozel về [hướng dẫn thiết lập TOR](https://github.com/artikozel/decred-articles/blob/master/English/howilearnedtostopworryingandlovethecli/part2-configuringtor.md).
 
-So lets start:
+Vậy hãy bắt đầu:
 
-#### You’ll need:
+#### Bạn sẽ cần:
 
-- Raspberry pi 3b+ or higher
-- Power Adapter (Power Cord)
-- 32 Gigabyte (or more) SD card and SD card reader, I would reccommend an SSD instead of an SD card if you’d like to get the best performance and shelf life out of your node, but an SD card is fine to start with.
-- An HDMI cable if you’d like to hook your Pi directly up to a monitor or TV. 
+- Raspberry pi 3b+ hoặc cao hơn
+- Bộ đổi nguồn (Dây nguồn)
+- Đầu đọc thẻ SD và thẻ SD 32 Gigabyte (hoặc hơn), tôi khuyên bạn nên dùng SSD thay vì thẻ SD nếu bạn muốn có được hiệu suất và thời hạn sử dụng tốt nhất từ nút của mình, nhưng bắt đầu bằng thẻ SD là tốt nhất.
+- Cáp HDMI nếu bạn muốn kết nối Pi của mình trực tiếp với màn hình hoặc TV. 
 
-If you don’t already have a Raspberry Pi, I’d recommend buying a kit or bundle which will come with everything you'll need. These usually run between $60 to $100 online, depending on what model you go for.
+Nếu bạn chưa có Raspberry Pi, tôi khuyên bạn nên mua một bộ hoặc gói đi kèm với mọi thứ bạn cần. Chúng thường dao động từ $60 đến $100, tùy thuộc vào mô hình bạn sử dụng.
 
-> ### Walkthrough Begins Here
+> ### Hướng dẫn bắt đầu tại đây
 
-#### Step 1. Download Raspberry Pi Imager
+#### Bước 1. Tải Raspberry Pi Imager
 
-- Plug your SD card or SSD into your computer. We will be installing the Raspberry Pi OS. Download a program called the [Raspberry Pi Imager](https://www.raspberrypi.org/downloads/) and install it. Choose your operating system (default is fine), choose your SD card (be careful not to pick anything else) and click write.
+- Cắm thẻ SD hoặc SSD vào máy tính của bạn. Chúng ta sẽ cài đặt hệ điều hành Raspberry Pi. Tải xuống chương trình có tên [Raspberry Pi Imager](https://www.raspberrypi.org/downloads/) và cài đặt nó. Chọn hệ điều hành của bạn (chế độ mặc định là được), chọn thẻ SD của bạn (cẩn thận đừng chọn bất kỳ thứ gì khác) và nhấp vào ghi.
 
-- Once finished right click on the drive and click eject.
+- Sau khi hoàn thành, nhấp chuột phải vào ổ đĩa và nhấp đẩy ra.
 
-You’ll need to decide if you want to set your pi up “headless” meaning you access your pi remotely without having to plug in a mouse, keyboard, and monitor, or you can choose to plug everything in and connect your pi to a tv or monitor with an HDMI cable. I would reccommend taking the time to learn how to SSH in and configure VNC in order to more easily check up on your node.
+Bạn sẽ cần quyết định xem liệu rằng mình có muốn thiết lập số pi của mình "không đầu" hay không, nghĩa là bạn truy cập số pi của mình từ xa mà không cần phải cắm chuột, bàn phím và màn hình hoặc bạn có thể chọn cắm mọi thứ và kết nối số pi của mình với TV hoặc màn hình bằng cáp HDMI. Tôi khuyên bạn nên dành thời gian tìm hiểu cách SSH vào và cấu hình VNC để dễ dàng kiểm tra trên nút của bạn.
 
-#### Step 2. Headless Setup
+#### Bước 2. Cài đặt không đầu
 
-- For the headless setup, plug your SD card or SSD back in. **you’ll need to create a blank file in your boot drive titled** ```ssh```
+- Để thiết lập không đầu, hãy cắm lại thẻ SD hoặc SSD của bạn. **bạn sẽ cần tạo một tệp trống trong ổ đĩa khởi động có tiêu đề** ```ssh```
 
-- If you plan on **sshing into your pi wirelessly**, there’s another step where you need to create a file titled ```wpa_supplicant.conf``` and input the following in the document:
+- Nếu bạn định **sshing vào pi không dây**, thì còn một bước nữa mà bạn cần tạo một tệp có tiêu đề ```wpa_supplicant.conf``` và nhập nội dung sau vào tài liệu:
 
 ```
 country=US
@@ -56,47 +56,47 @@ network={
   key_mgmt=WPA-PSK
 }
 ```
-Of course you need to input your own country, ssid (Network name), and your own network password.
+Tất nhiên, bạn cần nhập tên quốc gia, ssid (Tên mạng) và mật khẩu mạng của riêng bạn.
 
-- Save the file once you are done.
+- Lưu tệp khi bạn đã hoàn tất.
 
-- Right click the drive and click eject.
+- Nhấp chuột phải vào ổ đĩa và nhấp vào đẩy ra.
 
-- Plug your SD card into your Pi, plug in the power, plug in your ethernet cable (if needed), and boot up your pi.
+- Cắm thẻ SD vào Pi của bạn, cắm nguồn, cắm cáp ethernet (nếu cần) và khởi động pi của bạn.
 
 
-If you are doing this process directly connecting your pi to a monitor, you should see the pi boot up and you’ll be presented with the homescreen.
+Nếu bạn đang thực hiện quá trình này kết nối trực tiếp số pi của mình với màn hình, bạn sẽ thấy pi khởi động và bạn sẽ thấy màn hình chính.
 
-#### Step 3. Putty and VNC
+#### Bước 3. Putty và VNC
 
-If you are doing a headless setup you will need to download a program called [PUTTY](https://putty.org/). This program will allow us to access our pi, and control it via command line after it has booted.
+Nếu bạn đang thực hiện cài đặt không đầu, bạn sẽ cần tải xuống một chương trình có tên [PUTTY](https://putty.org/). Chương trình này sẽ cho phép chúng ta truy cập số pi của mình và điều khiển nó thông qua dòng lệnh sau khi nó khởi động.
 
-- In PUTTY, enter ```raspberrypi.local``` and click enter. Click connect past the precaution.
-You’ll be prompted to enter a Username and Password. The default username is ``` pi```  and the password is ``` raspberry```  (all lowercase).
+- Trong PUTTY, nhập ```raspberrypi.local``` và nhấp enter. Nhấp vào kết nối để phòng ngừa.
+Bạn sẽ được nhắc nhập Tên người dùng và Mật khẩu. Tên người dùng mặc định là ``` pi```  và mật khẩu là ``` raspberry```  (tất cả chữ thường).
 
-Congrats, you have just SSHed into your pi.
+Xin chúc mừng, bạn vừa SSH vào số pi của mình.
 
-If you tried to connect wirelessly and it couldn't find a host, you may need to plug in your pi directly to a monitor and manually enter your network passphrase when prompted. You can also just go directly through ethernet, which is the easier option.
+Nếu bạn đã cố gắng kết nối không dây và không thể tìm thấy máy chủ, bạn có thể phải cắm trực tiếp số pi của mình vào màn hình và nhập cụm mật khẩu mạng của bạn theo cách thủ công khi được nhắc. Bạn cũng có thể truy cập trực tiếp qua ethernet, đây là lựa chọn dễ dàng hơn.
 
-Now we need to enable VNC.
+Bây giờ chúng ta cần kích hoạt VNC.
 
-- In the command line Run
+- Trong dòng lệnh Run
 
 ```sudo raspi-config```
 
-- Select **Interfacing Options** 
+- Chọn **Interfacing Options** 
 
-- Select **VNC**
+- Chọn **VNC**
 
-- Press yes, then okay, then finished.
+- Nhấn có, rồi nhấn OK, sau đó hoàn tất.
 
-Next we'll set the resolution for VNC. (This step isn't needed, it's just to change the resolution)
+Tiếp theo, chúng tôi sẽ thiết lập độ phân giải cho VNC. (Bước này không cần thiết, chỉ để thay đổi độ phân giải)
 
-- Run:
+- Chạy:
 
 ```sudo nano /boot/config.txt```
 
-- Add the following text to the document:
+- Thêm văn bản sau vào tài liệu:
 ```
 framebuffer_width=1900
 framebuffer_height=1024
@@ -104,116 +104,116 @@ framebuffer_height=1024
 
 
 
-Now download, install and launch [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/)
+Bây giờ tải xuống, cài đặt và bắt đầu chạy [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/)
 
-- Select New connection from the File menu
+- Chọn Kết nối mới từ các Tệp
 
-- Enter ```raspberrypi.local``` in the "VNC Server" field
+- Nhập ```raspberrypi.local``` trong "Serve VNC"
 
-- Click Ok.
+- Nhấp Ok.
 
-- Double-click on the connection icon to connect.
+- Nhấp đúp vào biểu tượng kết nối để kết nối.
 
-- Click Ok if you are shown a security warning.
+- Nhấp vào Ok nếu bạn được hiển thị cảnh báo bảo mật.
 
-- Enter the Pi's username and password when prompted. The defaults are username: ``` pi```  and password: ``` raspberry```  Click Ok.
+- Nhập tên người dùng và mật khẩu của Pi khi được nhắc. Mặc định là tên người dùng: ``` pi```  và mật khẩu: ``` raspberry```  Nhấp Ok.
 
-#### Step 4. Initial Configuration 
+#### Bước 4. Cấu hình ban đầu 
 
-Your Raspberry Pi desktop will then appear in a window on your main computer's desktop. You'll be able to control everything from there.
+Màn hình Raspberry Pi của bạn sau đó sẽ xuất hiện trong một cửa sổ trên màn hình máy tính chính của bạn. Bạn sẽ có thể kiểm soát mọi thứ từ đó.
 
-- Click past the SSH warning (if it shows up).
+- Bấm cho qua cảnh báo SSH (nếu nó xuất hiện).
 
-- Set your country as needed.
+- Chọn quốc gia của bạn nếu cần.
 
-- Change your Pi account’s password when prompted
+- Thay đổi mật khẩu tài khoản Pi của bạn khi được nhắc
 
-- You can configure your wi-fi at this point, if needed.
+- Bạn có thể định cấu hình wi-fi của mình tại thời điểm này, nếu cần.
 
-- Update your Pi.
+- Update Pi của bạn.
 
-- Reboot your Pi when prompted.
+- Khởi động lại Pi của bạn khi được nhắc.
 
-If you’re doing this over VNC you’ll need to reconnect once the pi has re-booted.
+Nếu bạn đang làm điều này qua VNC, bạn sẽ cần kết nối lại khi pi đã khởi động lại.
 
-Now we need to download the DCR installer.
+Bây giờ chúng ta cần tải xuống trình cài đặt DCR.
 
-#### Step 5. Download and run dcrinstall
+#### Bước 5. Tải và chạy dcrinstall
 
-- Open the Web Browser (Top left).
+- Mở Trình duyệt web (Trên cùng bên trái).
 
-- Navigate to the decred.org website.
+- Điều hướng đến trang web decred.org.
 
-Scroll down and look for the green "Stable V1.5.1" button.
+Cuộn xuống và tìm nút "Ổn định V1.5.1" màu xanh lục.
 
-Newer releases will be a different version.
+Các bản phát hành mới hơn sẽ là một phiên bản khác.
 
-Clicking this will bring us to Decred's github releases page.
+Nhấp vào đây sẽ đưa chúng ta đến trang phát hành github của Decred.
 
-- Download ```dcrinstall-linux-arm-v1.5.1```
+- Tải ```dcrinstall-linux-arm-v1.5.1```
 
-Again, there may be a newer version out. Make sure to download the latest version.
+Một lần nữa, có thể có một phiên bản mới hơn. Đảm bảo tải xuống phiên bản mới nhất.
 
-- We'll need to set the file as an exectuable. Open the Pi Terminal.
+- Chúng tôi sẽ cần đặt tệp dưới dạng tệp thực thi. Mở thiết bị đầu cuối Pi.
 
-- Run ```cd ~/Downloads/```
+- Chạy ```cd ~/Downloads/```
 
-- Run ```sudo chmod u+x dcrinstall-linux-arm-v1.5.1```
+- Chạy ```sudo chmod u+x dcrinstall-linux-arm-v1.5.1```
 
-- Navigate to your downloads folder. Double click the installer, execute the installer in Terminal
+- Điều hướng đến thư mục tải xuống của bạn. Nhấp đúp vào trình cài đặt, thực thi trình cài đặt trong Terminal
 
-It will take a few minutes to download and setup all the files. A folder called ./decred has now been placed in your home directory. 
+Sẽ mất một vài phút để tải xuống và thiết lập tất cả các tệp. Một thư mục có tên ./decred hiện đã được đặt trong thư mục chính của bạn. 
 
-It may ask you to input a password for a new wallet. Enter a password. Remember, we're just using this as a node and not as a wallet.
+Nó có thể yêu cầu bạn nhập mật khẩu cho một ví mới. Gõ mật khẩu. Hãy nhớ rằng, chúng tôi chỉ sử dụng cái này như một nút chứ không phải một chiếc ví.
 
-- Type n for public data
+- Nhập n cho dữ liệu công khai
 
-- Hit n for Seed
+- Nhấn n cho Seed
 
-- We're not using this as a wallet so don't write down the seed.
+- Chúng tôi không sử dụng nó như một ví tiền, vì vậy đừng viết seed ra.
 
-- Hit okay for the seed.
-
-
-Wait for it to finish.
+- Đánh ok cho seed.
 
 
-Now we can start the node:
+Chờ cho nó hoàn thành.
 
-- Open the terminal.
 
-- Run:
+Bây giờ chúng ta có thể bắt đầu nút:
+
+- Mở thiết bị đầu cuối.
+
+- Chạy:
  
 ```
 cd ./decred/decred-linux-arm-v1.5.1
 ./dcrd
 ```
 
-Make sure to change the version number if the current version is no longer v1.5.1 (e.g v1.6.0)
+Đảm bảo thay đổi số phiên bản nếu phiên bản hiện tại không còn là v1.5.1 (ví dụ: v1.6.0)
 
-The Decred daemon will boot up and start connecting to peers
+Daemon Decred sẽ khởi động và bắt đầu kết nối với các peer
 
-If you see that your node has successfully booted, hit control+c so we can finish by enabling TOR.
+Nếu bạn thấy rằng nút của mình đã khởi động thành công, hãy nhấn Control + c để chúng tôi có thể kết thúc bằng cách bật TOR.
 
-If you do not wish to run TOR, make sure to forward the 9108 Port. If you choose to TOR, you won't need to do any port forwarding.
+Nếu bạn không muốn chạy TOR, hãy đảm bảo chuyển tiếp Cổng 9108. Nếu bạn chọn TOR, bạn sẽ không cần thực hiện bất kỳ chuyển tiếp cổng nào.
 
-> ### Installing and Configuring TOR
+> ### Cài đặt và cấu hình TOR
 
-TOR is free and open-source software for enabling anonymous communication.
+TOR là phần mềm mã nguồn mở và miễn phí cho phép giao tiếp ẩn danh.
 
-If you'd like a more in-depth explanation of what all of the commands do I'd reccommend checking out Kozel's Guide: [guide on setting up TOR](https://github.com/artikozel/decred-articles/blob/master/English/howilearnedtostopworryingandlovethecli/part2-configuringtor.md)
+Nếu bạn muốn được giải thích sâu hơn về những gì tất cả các lệnh thực hiện, tôi khuyên bạn nên xem Hướng dẫn của Kozel: [hướng dẫn thiết lập TOR](https://github.com/artikozel/decred-articles/blob/master/English/howilearnedtostopworryingandlovethecli/part2-configuringtor.md)
 
-Lets Start.
+Hãy bắt đầu.
 
-- Open the Raspberry pi terminal:
+- Mở thiết bị đầu cuối Raspberry pi:
 
-- Run ```sudo apt install tor```
+- Chạy ```sudo apt install tor```
 
-- Press y to continue
+- Nhấn y để tiếp tục
 
-- Run  ```sudo nano /etc/tor/torrc```
+- Chạy  ```sudo nano /etc/tor/torrc```
 
-- Add the following text at the top:
+- Thêm văn bản sau vào đầu:
 ```
 SocksPort 9050
 SocksPort raspberrypi.local:9050
@@ -224,47 +224,47 @@ HiddenServiceVersion 2
 HiddenServicePort 9108 127.0.0.1:9108
 ```
 
-Press Control and X at the same time when you are finished. Save to the same file location.
-Hit enter to continue.
+Nhấn Control và X cùng lúc khi bạn hoàn tất. Lưu vào cùng một vị trí tệp.
+Nhấn enter để tiếp tục.
 
-- Restart the tor service with ```sudo systemctl restart tor@default.service```
+- Khởi động lại dịch vụ TOR bằng ```sudo systemctl restart tor@default.service```
 
-- Check Status to see if its working ```sudo systemctl status tor@default.service```
+- Kiểm tra Trạng thái để xem nó có hoạt động không ```sudo systemctl status tor@default.service```
 
-(Exit view with ctrl+C)
+(Thoát chế độ xem bằng ctrl+C)
 
-- Run ```sudo cat /var/lib/tor/dcrd/hostname```
+- Chạy ```sudo cat /var/lib/tor/dcrd/hostname```
 
-- Save your .onion **we will need it for the next step.**
+- Lưu .onion của bạn **, chúng tôi sẽ cần nó cho bước tiếp theo.**
 
-- Run ```nano .dcrd/dcrd.conf```
+- Chạy ```nano .dcrd/dcrd.conf```
 
-Edit the top of the file with:
+Chỉnh sửa phần đầu của tệp bằng:
 ```
 proxy=127.0.0.1:9050
 listen=127.0.0.1
 externalip=Your-Onion-From-Above.onion
 torisolation=1
 ```
-Press Control+X to exit.
+Giữ Control+X để thoát.
 
-Save file
+Lưu file
 
-Run your Decred node with
+Chạy nút Decred của bạn với
 
 ```
 cd
 cd ./decred/decred-linux-arm-v1.5.1
 ./dcrd
 ```
-The Node will need lots of time to download and sync. Currently the Decred Blockchain is 4.2 Gigabytes in size.
+Node sẽ cần nhiều thời gian để tải xuống và đồng bộ hóa. Hiện tại Decred Blockchain có kích thước 4,2 Gigabyte.
 
 
-When you start seeing logs saying **(inbound)** it means your node is accepting peer connections and now you’re officially part of the Decred network, helping it grow. Even if everything is configured properly, you won't see inbound conns for several days on average.
-The network is intentionally designed to favor nodes that have a track record over new nodes to help prevent things like a bad actor firing up a bunch of malicious nodes.
+Khi bạn bắt đầu thấy các nhật ký cho biết **(inbound)**, điều đó có nghĩa là nút của bạn đang chấp nhận các kết nối ngang hàng và bây giờ bạn chính thức là một phần của mạng Decred, giúp nó phát triển. Ngay cả khi mọi thứ được định cấu hình đúng cách, trung bình bạn sẽ không thấy các lỗi gửi đến trong vài ngày.
+Mạng được thiết kế có chủ đích để ưu tiên các nút có hồ sơ theo dõi hơn các nút mới để giúp ngăn chặn những thứ như kẻ xấu kích hoạt một loạt các nút độc hại.
 
-If your Pi ever loses power, make sure to reboot it and re-run dcrd. It's also a good idea to use VNC to check up on your Pi every so often. 
+Nếu Pi của bạn bị mất nguồn, hãy đảm bảo khởi động lại nó và chạy lại dcrd. Bạn cũng nên sử dụng VNC để kiểm tra số Pi của mình thường xuyên. 
 
-Make sure you follow the Decred Project so you don't miss any new releases.
+Hãy chắc chắn rằng bạn theo dõi Dự án Decred để không bỏ lỡ bất kỳ bản phát hành mới nào.
 
 
